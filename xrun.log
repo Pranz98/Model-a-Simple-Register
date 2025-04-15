@@ -1,0 +1,30 @@
+xrun: 23.09-s001: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
+TOOL:	xrun	23.09-s001: Started on Jul 23, 2024 at 20:41:05 EDT
+xrun
+	-Q
+	-unbuffered
+	-timescale 1ns/1ns
+	-sysv
+	-access +rw
+	design.sv
+	testbench.sv
+mojavascript:void(0)dule register_test;
+           |
+xmvlog: *E,NOLABL (testbench.sv,1|11): Labels are not supported on this declaration type.
+  initial begin
+        |
+xmvlog: *E,DECINM (testbench.sv,17|8): Declaration is only valid within a module, interface, or a program block.
+  initial begin 
+        |
+xmvlog: *E,DECINM (testbench.sv,22|8): Declaration is only valid within a module, interface, or a program block.
+  initial begin
+        |
+xmvlog: *E,DECINM (testbench.sv,64|8): Declaration is only valid within a module, interface, or a program block.
+    initial begin
+          |
+xmvlog: *E,DECINM (testbench.sv,69|10): Declaration is only valid within a module, interface, or a program block.
+endmodule
+        |
+xmvlog: *E,MPANDC (testbench.sv,74|8): expecting the keyword 'module', 'macromodule', 'primitive', 'connectmodule','connect', 'discipline' or 'nature' [A.1].
+xrun: *E,VLGERR: An error occurred during parsing.  Review the log file for errors with the code *E and fix those identified problems to proceed.  Exiting with code (status 1).
+TOOL:	xrun	23.09-s001: Exiting on Jul 23, 2024 at 20:41:06 EDT  (total: 00:00:01)
